@@ -14,7 +14,7 @@ nav{
 .title{
     display: flex;
     position: relative;
-    gap: 10px;
+    align-items: center;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
@@ -52,7 +52,7 @@ nav ul li a:hover{
 }
 .toggle{
     /* background-color: rgba(225, 225, 225 ,0.2); */
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: -19px 20px 20px 0px rgba(0, 0, 0, 0.1);
     width: 300px;
     height: 90vh;
     padding-left: 20px;
@@ -115,6 +115,7 @@ nav ul li a:hover{
     border: 1px solid rgb(177, 177, 177);
     width: 120px;
     background-color: white;
+    cursor: pointer;
 }
 .button button:hover{
     background-color: black;
@@ -155,12 +156,7 @@ section{
     font-weight: bold;
     border-radius: 8px;
     margin-top: 20px;
-    
-}
-.heading .start-btn:hover{
-    border: solid 1px black;
-    color: black;
-    background-color: white;
+    cursor: pointer;
 }
 .heading .demo-btn{
     width: 120px;
@@ -169,10 +165,7 @@ section{
     border-bottom: none;
     background-color: white;
     border-radius: 80px;
-}
-.heading .demo-btn:hover{
-    background-color: black;
-    color: white;
+    cursor: pointer;
 }
 .logos img{
     width: 90px;
@@ -247,6 +240,9 @@ section{
     .section-bar{
         gap: 0;
     }
+    .heading .start-btn:hover{
+       
+    }
 }
 
 @media (max-width:430px){
@@ -278,8 +274,8 @@ section{
         padding: 10px;
     }
     .toggle{
-        height: 100%;
-        box-shadow: -19px -5px 10px rgba(0, 0, 0, 0.1);
+        height: 100vh;
+        box-shadow: -19px 20px 20px 0px rgba(0, 0, 0, 0.1);
     }
     .logos img{
         width: 70px;
